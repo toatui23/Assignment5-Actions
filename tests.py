@@ -17,10 +17,11 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected, 3.14)
 
     def listtest(self):
-        list = ['1','2','3','4']
+        list = ['1', '2', '3', '4']
         first, last = task.firstandlast(list)
         self.assertEqual(first, list[0])
         self.assertEqual(last, list[-1])
+
 
 if __name__ == '__main__':
     unittest.main()
