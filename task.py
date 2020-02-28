@@ -15,6 +15,6 @@ def firstandlast(list):
     return first, last
 
 
-def numberofdays(date1, date2)
+def numberofdays(date1, date2):
     answer = date2 - date1
     return answer.days
