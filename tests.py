@@ -12,16 +12,16 @@ class TestCase(unittest.TestCase):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
 
-    def circletest(self):
+    def test3(self):
         expected = task.CircleArea(1)
-        self.assertEqual(expected, 3.14)
-
-    def listtest(self):
-        list = ['1', '2', '3', '4']
-        first, last = task.firstandlast(list)
-        self.assertEqual(first, list[0])
-        self.assertEqual(last, list[-1])
+        self.assertEqual(expected, 3.14)    
 
 
 if __name__ == '__main__':
     unittest.main()
+
+# def listtest(self):
+#     list = ['1', '2', '3', '4']
+#     first, last = task.firstandlast(list)
+#     self.assertEqual(first, list[0])
+#     self.assertEqual(last, list[-1])
