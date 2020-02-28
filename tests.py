@@ -22,6 +22,11 @@ class TestCase(unittest.TestCase):
         self.assertEqual(first, list[0])
         self.assertEqual(last, list[-1])
 
+    def test5(self):
+        date1 = date(2020, 5, 1)
+        date2 = date(2020, 6, 4)
+        days = task.numberofdays(date1, date2)
+        self.assertEqual(days, 34)
 
 if __name__ == '__main__':
     unittest.main()
