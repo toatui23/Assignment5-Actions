@@ -2,6 +2,7 @@ import unittest
 import task
 from datetime import date
 
+
 class TestCase(unittest.TestCase):
 
     def test1(self):
@@ -27,6 +28,7 @@ class TestCase(unittest.TestCase):
         date2 = date(2020, 6, 4)
         days = task.numberofdays(date1, date2)
         self.assertEqual(days, 34)
+
 
 if __name__ == '__main__':
     unittest.main()
